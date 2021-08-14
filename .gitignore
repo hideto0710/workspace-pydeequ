@@ -1,0 +1,16 @@
+*.pyc
+
+# Packages
+*.egg
+!/tests/**/*.egg
+/*.egg-info
+/dist/*
+build
+_build
+.cache
+*.so
+
+.venv
+
+tmp/*
+!tmp/.keep
