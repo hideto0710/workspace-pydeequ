@@ -6,6 +6,7 @@ RUN curl -sSL "https://get.sdkman.io" | bash
 # https://github.com/awslabs/python-deequ/tree/v0.1.8#setup-java
 ARG JAVA_VERSION="8.0.292.hs-adpt"
 ARG SPARK_VERSION="3.1.2"
+ENV SPARK_VERSION="${SPARK_VERSION}"
 RUN /bin/bash -c \
   'source /home/vscode/.sdkman/bin/sdkman-init.sh && sdk install java "${JAVA_VERSION}" && sdk install spark "${SPARK_VERSION}"'
 
