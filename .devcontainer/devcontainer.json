@@ -1,0 +1,21 @@
+{
+  "name": "Workspace PyDeequ",
+  "dockerComposeFile": "../docker-compose.yml",
+  "workspaceFolder": "/workspace",
+  "service": "console",
+  "settings": {
+    "java.home": "/docker-java-home",
+    "java.configuration.runtimes": [{
+      "default": true,
+      "name": "JavaSE-1.8",
+      "path": "/usr/local/sdkman/candidates/java/current"
+    }]
+  },
+  "extensions": [
+    "ms-python.python",
+  	"ms-toolsai.jupyter",
+    "vscjava.vscode-java-pack"
+  ],
+  "remoteUser": "vscode",
+  "postCreateCommand": ".devcontainer/postCreateCommand.sh"
+}
